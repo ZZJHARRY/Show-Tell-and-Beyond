@@ -4,6 +4,6 @@ Starting from the paper of [Show and Tell](https://www.cv-foundation.org/openacc
 
 Implementation Details:
 
-We adapted some code from [here](https://www.kaggle.com/dipanjandas96/image-caption-resnet-transformerdecoder-pytorch/notebook) in the image proprocessing stage.
+We adapted some ideas from [here](https://www.kaggle.com/dipanjandas96/image-caption-resnet-transformerdecoder-pytorch/notebook) in the image proprocessing stage.
 
-Then, we manually implemented the CNN + LSTM networks to train.
+Then, we manually implemented the CNN + LSTM (including teacher forcing) networks to train.
