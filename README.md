@@ -28,6 +28,12 @@ Before running the codes bellow, you need to make sure that you are at the root 
 
 # Implementation Details:
 
-We adapted some ideas from [here](https://www.kaggle.com/dipanjandas96/image-caption-resnet-transformerdecoder-pytorch/notebook) in the image proprocessing stage.
+**preporcess.py**
+
+We adapted some ideas from [here](https://www.kaggle.com/dipanjandas96/image-caption-resnet-transformerdecoder-pytorch/notebook) in the image proprocessing stage. To preprocess the images, we first resize all of the images to be the shape of 224 * 224, and then we normalize all of the resized images.
+
+After that, we applied a ResNet pretrained on Imagenet as the feature extractor on the preprocess images.
+
+**encoder_decoder.py**
 
 Then, we manually implemented the CNN + LSTM (including teacher forcing) networks to train.
